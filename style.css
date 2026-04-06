@@ -237,3 +237,34 @@ button {
     margin: 0;
   }
 }
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4.5rem 3rem;
+
+  .footer__logo {
+    a {
+      color: var(--color-text-light);
+      text-decoration: none;
+
+      font-size: 3rem;
+      font-weight: 900;
+    }
+  }
+
+  .footer__menu-list {
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .footer__menu-list__item {
+    a {
+      text-decoration: none;
+      color: var(--color-text-light);
+      font-size: var(--font-size-small);
+    }
+  }
+}
