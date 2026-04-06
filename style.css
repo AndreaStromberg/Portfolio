@@ -89,6 +89,8 @@ button {
 
   background-color: var(--color-accent);
   color: var(--color-text-dark);
+
+  border: 0;
 }
 
 /* HUVUDLAYOUT */
@@ -148,9 +150,12 @@ button {
   /* row-gap: 5rem; */
 }
 
-.hero {
+.hero,
+.gallery {
   grid-column: inner;
+}
 
+.hero {
   height: 400px;
 
   display: flex;
@@ -167,5 +172,33 @@ button {
 
   .contact-button {
     align-self: flex-end;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 90px 0;
+  /* row-gap: 90px; */
+  gap: 90px;
+
+  .gallery__card {
+    max-width: 21rem;
+
+    .card__picture {
+      max-width: 21rem;
+      height: auto;
+    }
+
+    .card__title {
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+
+    .card__category {
+      font-size: 20px;
+      margin-top: 20px;
+    }
   }
 }
