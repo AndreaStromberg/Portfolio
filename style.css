@@ -257,15 +257,24 @@ button {
   @media screen and (max-width: 820px) {
     gap: 2rem;
 
-    .card__title {
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
-    }
+    .gallery__card {
+      .card__title {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+      }
 
-    .card__category {
-      font-size: 16px;
-      margin-top: 16px;
+      .card__category {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+      }
     }
+  }
+
+  @media screen and (max-width: 580px) {
+    grid-template-columns: 1fr;
+
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -302,6 +311,16 @@ button {
   }
 
   border-bottom: var(--color-text-light) solid 1px;
+
+  @media screen and (max-width: 625px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  @media screen and (max-width: 525px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .site-footer {
