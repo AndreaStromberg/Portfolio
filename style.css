@@ -169,6 +169,38 @@ button {
 
   .menu-button {
     display: none;
+    position: relative;
+  }
+
+  /* .hamburger-menu {
+    position: relative;
+  } */
+
+  .menu-expanded {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    list-style: none;
+    display: none;
+
+    .menu-expanded__listitem {
+      white-space: nowrap;
+      a {
+        color: var(--color-text-light);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-accent-darker);
+        }
+      }
+    }
+
+    &.menu-expanded--visible {
+      /* display: block; */
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
   }
 
   /* Anpassningar för mindre skärmar */
